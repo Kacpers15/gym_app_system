@@ -20,4 +20,8 @@ public class ClassBooking {
     private GroupClass groupClass;
 
     private LocalDateTime createdAt = LocalDateTime.now();
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private ClassBookingStatus status = ClassBookingStatus.ACTIVE;
 }
