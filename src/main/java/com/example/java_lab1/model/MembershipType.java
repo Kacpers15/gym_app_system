@@ -20,4 +20,5 @@ public class MembershipType {
 
     private int durationDays;
     private boolean active = true;
+    private String description;
 }

@@ -23,4 +23,8 @@ public class Membership {
     private LocalDate endDate;
 
     private BigDecimal pricePaid;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private MembershipStatus status = MembershipStatus.ACTIVE;
 }
