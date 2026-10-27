@@ -35,3 +35,58 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# --- Java / Gradle ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# --- IDE ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.project
+.classpath
+.settings/
+.factorypath
+
+# --- Spring / lokalne sekrety ---
+application-local.properties
+application-local.yml
+*.env
+.env
+.env.*
+
+# --- Frontend (Vite / Node) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# --- Logi / tmp ---
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# --- System ---
+Thumbs.db
+Desktop.ini
